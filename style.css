@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --Branco:#FAFAFA;
+    --Preto:#1A1A1A;
+    --Dourado:#C8A951;
+    --Vermelho:#9E1C1C;
+}
+
+body{
+    background-color:var(--Branco);
+}
+
+/* MENU */
+
+nav{
+    background-color:var(--Preto);
+
+    padding:15px;
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:20px;
+
+    padding-left:10px;
+}
+
+nav a{
+
+    color:var(--Dourado);
+
+    text-decoration:none;
+
+    transition:.5s;
+}
+
+nav a:hover{
+
+    color:var(--Vermelho);
+
+}
+
+/* HEADER */
+
+header{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+    background-color:var(--Preto);
+
+    border-bottom:1px solid #333;
+
+    font-family:'Playfair Display', serif;
+}
+
+.logo{
+
+    color:var(--Dourado);
+
+    font-size:35px;
+
+}
+
+/* BANNER */
+
+section{
+
+    text-align:center;
+
+    padding:50px;
+}
+
+section h2{
+
+    font-size:40px;
+
+    color:var(--Preto);
+
+    margin-bottom:20px;
+
+    font-family:'Playfair Display', serif;
+}
+
+section p{
+
+    margin-bottom:20px;
+
+    font-size:18px;
+}
+
+section button{
+
+    background-color:var(--Dourado);
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.5s;
+}
+
+section button:hover{
+
+    background-color:var(--Vermelho);
+
+    color:white;
+}
+
+/* TITULO */
+
+h2{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    color:var(--Preto);
+
+    font-family:'Playfair Display', serif;
+}
+
+/* ÁREA DOS PRODUTOS */
+
+.produtos{
+
+    display:grid;
+
+  grid-template-columns: 1fr 1fr;
+
+
+    gap:30px;
+
+    padding:50px;
+}
+
+/* CARD */
+
+.card{
+
+    width:250px;
+
+    background-color:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+
+    transition:.5s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+}
+
+.card img{
+
+    width:100%;
+
+    border-radius:10px;
+}
+
+.card h3{
+
+    margin-top:15px;
+
+    color:var(--Preto);
+}
+
+.card p{
+
+    margin:15px 0;
+
+    color:var(--Vermelho);
+
+    font-weight:bold;
+}
+
+.card button{
+
+    width:100%;
+}
+
+/* BENEFICIOS */
+
+section div{
+
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+
+    background-color:var(--Preto);
+
+    color:var(--Dourado);
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:40px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+nav ul{
+
+    flex-direction:column;
+
+    text-align:center;
+}
+
+.logo{
+
+    font-size:28px;
+}
+
+section h2{
+
+    font-size:30px;
+}
+
+}
